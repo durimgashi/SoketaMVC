@@ -2,7 +2,7 @@
 
 namespace App\Controllers; 
 
-class TestController {
+class TestController extends Controller {
     function __construct() {
         echo "Hello from test controller"; 
     }

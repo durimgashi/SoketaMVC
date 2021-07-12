@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-class SecondController {
+class SecondController extends Controller{
 
     function __construct() {
         echo "Init SecondController";
@@ -12,7 +12,9 @@ class SecondController {
         echo "Static method from SecondController";
     }
 
-    public function secondFunction($data) {
-        sendData("DADAA" .$data);
+    public function secondFunction() {
+        // render('home');
+        
+    //    route('/Test');
     }
 }

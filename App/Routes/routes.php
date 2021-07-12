@@ -5,7 +5,7 @@ use App\Config\Router;
 
 // GET routes
 Router::get("/", function($data) {
-    echo "It's coming home!";
+    render('auth/login');
 });
 
 Router::get("/Test/:param1/:param2", function($data) {
@@ -16,12 +16,11 @@ Router::get("/Test/:param1/:param2", function($data) {
     sendData($_GET);
 });
 
-Router::get("/Second/:param1/:param2", [SecondController::class, 'secondFunction']);
+Router::get("/Second", [SecondController::class, 'secondFunctionaaa']);
 
 // POST routes
 
 Router::post("/Test", function() {
     echo "Hello from test POST";
-
 });
 

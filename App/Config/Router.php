@@ -13,6 +13,18 @@ class Router {
         self::createRoute('POST', $route, $Callback);
     }
 
+    public static function delete($route, $Callback = null) {
+        self::createRoute('DELETE', $route, $Callback);
+    }
+
+    public static function put($route, $Callback = null) {
+        self::createRoute('PUT', $route, $Callback);
+    }
+
+    public static function patch($route, $Callback = null) {
+        self::createRoute('PATCH', $route, $Callback);
+    }
+
     public static function createRoute($Method, $route, $Callback = null) {
         $route_arr = explode('/:', $route);
 
@@ -53,21 +65,29 @@ class Router {
     }
 
     private static function validateCallback($route, $params) {
-        if(gettype($route['Callback']) == 'object') {
-            call_user_func($route['Callback'], $params);
-        } else if(gettype($route['Callback']) == 'array') { 
-            $controller =  '\App\Controllers\\'. $route['Callback'][0];
-            $controllerMethod = $route['Callback'][1];
+        try {
+            if(gettype($route['Callback']) == 'object') {
+                call_user_func($route['Callback'], $params);
+            } else if(gettype($route['Callback']) == 'array') { 
+                $controller =  '\App\Controllers\\'. $route['Callback'][0];
+                $controllerMethod = $route['Callback'][1];
+    
+                $controller = new $controller();
 
-            $controller = new $controller();
+                if(!method_exists($controller, $controllerMethod)) {
+                    sendData(['error' => 'Method ' . $controllerMethod . ' does not exist inside class ' . $route['Callback'][0] . '!']);
+                }
 
-            if(sizeof($params) == 0) {
-                $controller->$controllerMethod();
+                if(sizeof($params) == 0) {
+                    $controller->$controllerMethod();
+                } else {
+                    $controller->$controllerMethod($params);
+                }
             } else {
-                $controller->$controllerMethod($params);
+                sendData(['error' => 'Unknown callback type declared for route '.$route['BaseRoute'].' of type '. $route['Method']], 404);
             }
-        } else {
-            sendData(['error' => 'Unknown callback type declared for route '.$route['BaseRoute'].' of type '. $route['Method']], 404);
+        } catch(Exception $e) {
+            sendData($e);
         }
     }
 }
