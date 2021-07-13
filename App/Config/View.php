@@ -7,7 +7,8 @@ class View {
 
     function __construct($view)
     {
-        $this->view = $view;
+//        $this->view = $view;
+        return $view;
     }
 
     public function getView() {

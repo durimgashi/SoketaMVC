@@ -2,9 +2,10 @@
 
 namespace App\Config;
 
-use Routes\routes; 
+use App\Controllers\Controller;
+use Routes\routes;
 
-class Router { 
+class Router extends Controller {
     public static function get($route, $Callback = null) {
         self::createRoute('GET', $route, $Callback); 
     }

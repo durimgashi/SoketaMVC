@@ -1,6 +1,8 @@
 <?php
 
 use App\Config\Router;
+use App\Controllers\SecondController;
+
 //use App\Controllers\SecondController;
 
 // GET routes
