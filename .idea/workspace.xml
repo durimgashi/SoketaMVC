@@ -19,13 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1424719-9b11-4006-bee6-4f351b09d2e1" name="Default Changelist" comment="Working on rendering views">
-      <change afterPath="$PROJECT_DIR$/Public/assets/jQuery/jquery-3.6.0.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Config/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Config/Router.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Config/View.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Config/View.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Routes/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Routes/routes.php" afterDir="false" />
-    </list>
+    <list default="true" id="d1424719-9b11-4006-bee6-4f351b09d2e1" name="Default Changelist" comment="..." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,7 +68,7 @@
       <workItem from="1625916090942" duration="1736000" />
       <workItem from="1625953380538" duration="934000" />
       <workItem from="1626122047072" duration="3099000" />
-      <workItem from="1626210901733" duration="1560000" />
+      <workItem from="1626210901733" duration="2514000" />
     </task>
     <task id="LOCAL-00001" summary="Working on rendering views">
       <created>1626126599755</created>
@@ -83,7 +77,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626126599755</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="...">
+      <created>1626212526744</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1626212526744</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,7 +104,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Working on rendering views" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working on rendering views" />
+    <MESSAGE value="..." />
+    <option name="LAST_COMMIT_MESSAGE" value="..." />
   </component>
   <component name="WindowStateProjectService">
     <state x="702" y="340" key="#Notifications" timestamp="1625916127938">
@@ -123,10 +125,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="527" y="91" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1625909309496" />
-    <state x="552" y="234" key="Vcs.Push.Dialog.v2" timestamp="1626126602535">
+    <state x="552" y="234" key="Vcs.Push.Dialog.v2" timestamp="1626212530704">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="234" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1626126602535" />
+    <state x="552" y="234" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1626212530704" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1626122634330">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
