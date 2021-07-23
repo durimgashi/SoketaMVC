@@ -5,16 +5,17 @@ namespace App\Controllers;
 class SecondController extends Controller{
 
     function __construct() {
-        echo "Init SecondController";
+//        echo "Init SecondController";
     }
 
-    public static function statik() {
-        echo "Static method from SecondController";
+    public static function staticMethod() {
+        echo "\nStatic method from SecondController";
     }
 
-    public function secondFunction() {
-        // render('home');
-        
-    //    route('/Test');
+    public function dataObjectFromController($data) {
+        sendData(["Data from controller" => $data]);
+    }
+    public function getObjectProperty($Data) {
+        sendData(["Data property" => $Data->name]);
     }
 }

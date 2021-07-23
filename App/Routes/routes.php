@@ -3,26 +3,25 @@
 use App\Config\Router;
 use App\Controllers\SecondController;
 
-//use App\Controllers\SecondController;
-
 // GET routes
-Router::get("/", function($data) {
-    render('auth/login');
+Router::get("/", function() {
+    render('auth/login',  ['var1' => 'Durim Gashi', 'var2' => 'Luke Skywalker']);
 });
 
-Router::get("/Test/:param1/:param2", function($data) {
+Router::get("/Test/:firstName/:lastName", function($data) {
     // sendData([
     //     "message" => "Hello from route '/Test' of type GET",
     //     "Data" => $data
     // ]);
-    sendData($_GET);
+    sendData($data);
 });
 
-Router::get("/Second", [SecondController::class, 'secondFunctionaaa']);
+Router::get("/ObjectFromController/:name/:surname/:company", [SecondController::class, 'dataObjectFromController']);
+Router::get("/GetObjectProperty/:name/:surname/:company", [SecondController::class, 'getObjectProperty']);
+Router::get("/StaticMethod", [SecondController::class, 'staticMethod']);
 
 // POST routes
 
 Router::post("/Test", function() {
     echo "Hello from test POST";
 });
-
