@@ -1,15 +1,3 @@
-<!--<div>-->
-<!--    <form action="--><?//= route('/Test/1/2') ?><!--" method="GET">-->
-<!--        <input type="text" name=""><br>-->
-<!--        <input type="text" name=""><br>-->
-<!---->
-<!--        <button type="submit">Login</button>-->
-<!--    </form>-->
-<!---->
-<!--    <a href="--><?//= route('/Test/1/2') ?><!--">aaaaaaaaa</a>-->
-<!--</div>-->
-
-
 <div class="container w-30">
     <form action="<?= route('/register') ?>" method="POST" class="register-form">
         <div class="form-group">

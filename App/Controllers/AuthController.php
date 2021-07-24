@@ -4,6 +4,8 @@
 namespace App\Controllers;
 
 
+use App\Models\AuthModel;
+
 class AuthController {
     function __construct() {
 
@@ -11,8 +13,9 @@ class AuthController {
 
     public function register() {
 
-        $Data = $_POST;
-
-        sendData($Data);
+        AuthModel::getUser();
+//        $Data = $_POST;
+//
+//        sendData($Data);
     }
 }
