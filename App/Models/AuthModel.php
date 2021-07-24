@@ -8,14 +8,18 @@ use PDO;
 class AuthModel extends Database {
     public static $table = 'user';
     function __construct() {
+
     }
 
-    public static function getUser() {
-        $conn = static::connect();
-        $stmt = $conn->prepare("SELECT * FROM " . self::$table);
-        $stmt->execute();
-        $res = $stmt->fetchAll(PDO::FETCH_OBJ);
+    public static function rawQuery() {
+        sendData(static::query("SELECT firstName, lastName FROM " . static::$table));
+    }
 
-        sendData($res);
+    public static function getAll() {
+        sendData(static::all());
+    }
+
+    public static function findUser($id) {
+        sendData(static::find($id));
     }
 }

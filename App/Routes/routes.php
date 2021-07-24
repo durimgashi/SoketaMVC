@@ -28,3 +28,4 @@ Router::get('/register', function() {
 });
 
 Router::post('/register', [AuthController::class, 'register']);
+Router::get('/user/:userID', [AuthController::class, 'getUser']);

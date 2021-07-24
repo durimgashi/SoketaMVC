@@ -19,14 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1424719-9b11-4006-bee6-4f351b09d2e1" name="Default Changelist" comment="Progress people, progress">
-      <change afterPath="$PROJECT_DIR$/App/Database/Database.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/Models/AuthModel.php" afterDir="false" />
+    <list default="true" id="d1424719-9b11-4006-bee6-4f351b09d2e1" name="Default Changelist" comment="...">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Controllers/AuthController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Database/db_connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Database/db_connection.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Views/auth/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Views/auth/register.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Database/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Database/Database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Models/AuthModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Models/AuthModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Routes/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Routes/routes.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +80,8 @@
       <workItem from="1626210901733" duration="4314000" />
       <workItem from="1627058387070" duration="5834000" />
       <workItem from="1627121164488" duration="3535000" />
-      <workItem from="1627139387595" duration="1172000" />
+      <workItem from="1627139387595" duration="1365000" />
+      <workItem from="1627152212170" duration="1099000" />
     </task>
     <task id="LOCAL-00001" summary="Working on rendering views">
       <created>1626126599755</created>
@@ -112,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627072132425</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="...">
+      <created>1627140748283</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1627140748283</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,11 +138,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Working on rendering views" />
-    <MESSAGE value="..." />
     <MESSAGE value="Progress people, progress" />
-    <option name="LAST_COMMIT_MESSAGE" value="Progress people, progress" />
+    <MESSAGE value="..." />
+    <option name="LAST_COMMIT_MESSAGE" value="..." />
   </component>
   <component name="WindowStateProjectService">
+    <state x="586" y="198" key="#Inspections" timestamp="1627153041975">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="586" y="198" key="#Inspections/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1627153041975" />
     <state x="702" y="340" key="#Notifications" timestamp="1627058396034">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -158,10 +168,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="527" y="91" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1627121206610" />
-    <state x="552" y="234" key="Vcs.Push.Dialog.v2" timestamp="1627072134570">
+    <state x="552" y="234" key="Vcs.Push.Dialog.v2" timestamp="1627140749837">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="234" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1627072134570" />
+    <state x="552" y="234" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1627140749837" />
     <state x="552" y="234" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1626212530704" />
     <state x="-1494" y="0" width="1027" height="1018" maximized="true" key="dock-window-1" timestamp="1627072592085">
       <screen x="-1920" y="0" width="1920" height="1040" />

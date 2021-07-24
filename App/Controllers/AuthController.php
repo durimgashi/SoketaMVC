@@ -11,11 +11,11 @@ class AuthController {
 
     }
 
-    public function register() {
+    public function getUser($Data) {
+        AuthModel::findUser($Data->userID);
+    }
 
-        AuthModel::getUser();
-//        $Data = $_POST;
-//
-//        sendData($Data);
+    public function register() {
+        sendData($_POST);
     }
 }
