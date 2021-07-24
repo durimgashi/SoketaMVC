@@ -7,7 +7,13 @@ include_once '../App/Routes/routes.php';
 include_once '../App/Config/core.php';
 
 $url = parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
-$route = explode("Public/",$url)[1];
+//$route = explode("Public/",$url)[1];
+$route = explode("/",$url);
 
+unset($route[0]);
+unset($route[1]);
+$route = implode('/', $route);
+
+//echo json_encode($route);
 App\Config\Router::execute($route);
 

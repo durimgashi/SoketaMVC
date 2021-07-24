@@ -19,7 +19,6 @@ function isJson($string) {
 
 function vd($data) {
     var_dump($data);
-    die();
 }
 
 function render($file, $variables = []) {
