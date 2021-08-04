@@ -12,14 +12,14 @@ class AuthModel extends Database {
     }
 
     public static function rawQuery() {
-        sendData(static::query("SELECT firstName, lastName FROM " . static::$table));
+        send(static::query("SELECT firstName, lastName FROM " . static::$table));
     }
 
     public static function getAll() {
-        sendData(static::all());
+        send(static::all());
     }
 
     public static function findUser($id) {
-        sendData(static::find($id));
+        send(static::find($id));
     }
 }

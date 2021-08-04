@@ -21,10 +21,12 @@
   <component name="ChangeListManager">
     <list default="true" id="d1424719-9b11-4006-bee6-4f351b09d2e1" name="Default Changelist" comment="...">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Config/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Config/Router.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Controllers/AuthController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Database/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Database/Database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Controllers/SecondController.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Controllers/SecondController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/Models/AuthModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Models/AuthModel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/Routes/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Routes/routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Utils/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Utils/functions.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +83,8 @@
       <workItem from="1627058387070" duration="5834000" />
       <workItem from="1627121164488" duration="3535000" />
       <workItem from="1627139387595" duration="1365000" />
-      <workItem from="1627152212170" duration="1099000" />
+      <workItem from="1627152212170" duration="1605000" />
+      <workItem from="1628098862229" duration="1088000" />
     </task>
     <task id="LOCAL-00001" summary="Working on rendering views">
       <created>1626126599755</created>

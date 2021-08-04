@@ -13,9 +13,9 @@ class SecondController extends Controller{
     }
 
     public function dataObjectFromController($data) {
-        sendData(["Data from controller" => $data]);
+        send(["Data from controller" => $data]);
     }
     public function getObjectProperty($Data) {
-        sendData(["Data property" => $Data->name]);
+        send(["Data property" => $Data->name]);
     }
 }

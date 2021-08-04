@@ -16,6 +16,6 @@ class AuthController {
     }
 
     public function register() {
-        sendData($_POST);
+        send($_POST);
     }
 }

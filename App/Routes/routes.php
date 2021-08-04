@@ -7,10 +7,10 @@ use App\Controllers\SecondController;
 // GET routes
 Router::get("/", function() {
     render('auth/login',  ['var1' => 'Durim Gashi', 'var2' => 'Luke Skywalker']);
-});
+}, true);
 
 Router::get("/Test/:firstName/:lastName", function($data) {
-    sendData($data);
+    send($data);
 });
 
 Router::get("/ObjectFromController/:name/:surname/:company", [SecondController::class, 'dataObjectFromController']);
