@@ -33,9 +33,7 @@ Router::get('/profile', [AuthController::class, 'profile']);
 //Router::get("/Test/:firstName/:lastName", [TestController::class, 'dummyCall']);
 Router::get("/Test/:firstName/:lastName", function ($Data) {
     send($Data);
-}, function () {
-    echo "asdasdasdsad";
-}, 'middleware2');
+});
 
 function middleware2() {
     echo "middleware 2!!!";

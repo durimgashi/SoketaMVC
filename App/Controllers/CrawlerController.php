@@ -2,7 +2,6 @@
 
 namespace App\Controllers;
 
-use App\Models\StandingModel;
 use App\Utils\Response;
 
 include 'simple_html_dom.php';
