@@ -6,12 +6,11 @@ namespace App\Database;
 use PDO;
 use PDOException;
 
-class Database
-{
+class Database {
     public static $table;
-    public static $primary_key = 'id';
-    public static $active = 1;
-    public static $not_active = 0;
+    public static string $primary_key = 'id';
+    public static int $active = 1;
+    public static int $not_active = 0;
 
     protected static function connect() {
         try {

@@ -23,7 +23,6 @@
 
 <?php
 
-//include_once (new \App\Config\View($layout))->getView();
 include_once $layout;
 
 ?>

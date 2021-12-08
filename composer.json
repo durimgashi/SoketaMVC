@@ -1,0 +1,15 @@
+{
+    "autoload": {
+        "classmap": ["App/"]
+    },
+    "require": {
+        "ext-json": "*",
+        "ext-pdo": "*",
+        "firebase/php-jwt": "^5.5",
+        "symfony/console": "^5.3",
+        "phpunit/phpunit": "^9.5",
+        "guzzlehttp/guzzle": "^7.4",
+        "ext-dom": "*",
+        "fabpot/goutte": "^4.0"
+    }
+}
