@@ -6,7 +6,7 @@ class Server {
     }
 
     public static function getRoute(): string {
-        return str_replace(self::getBaseUrl(), '' , self::getCurrentURL());
+        return str_replace(self::getBaseUrl(), '' , self::remove_query_params(self::getCurrentURL()));
     }
 
     public static function getBaseUrl(): string {
@@ -28,6 +28,11 @@ class Server {
         }
 
         return $server_request_scheme . '://' . $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+    }
+
+    private static function remove_query_params( $src ): string {
+        $parts = explode( '?', $src );
+        return $parts[0];
     }
 }
 
