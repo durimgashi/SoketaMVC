@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use App\Models\DurimModel;
 use App\Utils\Response;
+use App\Utils\Validator;
 
 class TestController extends Controller {
     function __construct() { }
@@ -24,9 +25,23 @@ class TestController extends Controller {
             ->json();
     }
 
-    public function durim() {
-        $response = new Response(DurimModel::test());
+    public function validator() {
+//        $data = json_decode(file_get_contents('php://input'));
+        $data = $_POST;
 
-        $response->send();
+        $val = new Validator();
+
+        $val->name('email')->value($data['email'])->errorclass('email')->pattern('email')->required();
+        $val->name('username')->value($data['username'])->errorclass('username')->required();
+        $val->name('password')->value($data['password'])->errorclass('password')->min(8)->required();
+
+
+        if (!$val->isSuccess()) {
+            send($val->getErrors());
+        }
+
+
+
+        send($data);
     }
 }

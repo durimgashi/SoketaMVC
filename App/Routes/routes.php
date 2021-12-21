@@ -64,3 +64,6 @@ Router::get('/durim', function ($Data) {
 
      $view->setView('auth/home')->setFileExt('html')->setDefaultLayout('')->render();
 });
+
+
+Router::post('/validator', [TestController::class, 'validator']);
