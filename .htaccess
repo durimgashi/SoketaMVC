@@ -1,10 +1,14 @@
 RewriteEngine On
+#RewriteCond %{REQUEST_URI} !\.(?:css|js|jpeg|gif|png|svg|ttf)$ [NC]
+#RewriteRule ^([a-zA-Z0-9\-\_\/]*)$ server.php/$1
+
+RewriteRule ^(Public)($|/) - [L] # Exclude directory from rewrite rule
+#RewriteCond %{REQUEST_URI} !\.(?:css|js|jpeg|gif|png|svg|ttf)$ [NC]
+
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 #RewriteRule ^(.*)$ Public/index.php [QSA,L] # On any directory redirect to Public/index.php
 #RewriteRule ^ Public/index.php [QSA,L] # On '/' route redirect to Public/index.php
 
-
 RewriteRule ^(.*)$ server.php [QSA,L] # On any directory redirect to Public/index.php
 RewriteRule ^ server.php [QSA,L] # On '/' route redirect to Public/index.php
- 

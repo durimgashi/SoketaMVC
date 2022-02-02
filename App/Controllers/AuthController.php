@@ -19,7 +19,13 @@ class AuthController extends Controller {
     }
 
     public function register() {
-        send($_POST);
+//        send($_POST);
+        setUserSession($_POST);
+        send([
+            'success' => true,
+            'errors' => false,
+            'data' => $_POST
+        ]);
     }
 
     public function registerView() {

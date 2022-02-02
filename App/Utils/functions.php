@@ -102,3 +102,11 @@ function authenticate() {
         ])->send();
     }
 }
+
+function setUserSession($data) {
+    session_start();
+    $_SESSION['isLoggedIn'] = true;
+    $_SESSION['firstName'] = $data['firstName'] ?? null;
+    $_SESSION['lastName'] = $data['lastName'] ?? null;
+    $_SESSION['email'] = $data['email'] ?? null;
+}

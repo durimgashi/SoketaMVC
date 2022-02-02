@@ -8,7 +8,7 @@ use App\Controllers\TestController;
 use App\Utils\View;
 
 
-Router::get("/register", [AuthController::class, 'registerView']);
+Router::get("/", [AuthController::class, 'registerView']);
 Router::post('/login', [AuthController::class, 'login']);
 Router::get('/profile', [AuthController::class, 'profile']);
 
